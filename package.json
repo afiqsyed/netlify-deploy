@@ -1,6 +1,7 @@
 {
   "name": "jss-angular-deploy",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "cd ./node-xmcloud-proxy && npm run build-all && cd ..",
@@ -10,8 +11,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "serverless-http": "^3.2.0"
+    "netlify-cli": "^17.36.2"
   }
 }

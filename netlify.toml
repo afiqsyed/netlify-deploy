@@ -1,0 +1,16 @@
+[functions]
+  directory = "node-xmcloud-proxy/src"
+  node_bundler = "esbuild"
+  included_files = ["node-xmcloud-proxy/dist/**"]
+[[redirects]]
+  from = "/dist/browser/*"
+  status = 200
+  to = "/browser/:splat"
+[[redirects]]
+  from = "/*"
+  status = 200
+  to = "/.netlify/functions/index/:splat"
+  force = true
+[build]
+  command = "npm run build"
+  publish = "node-xmcloud-proxy/dist"

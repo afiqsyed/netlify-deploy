@@ -1,0 +1,17 @@
+{
+  "name": "jss-angular-deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd ./node-xmcloud-proxy && npm run build-all && cd ..",
+    "install": "cd ./node-xmcloud-proxy && npm install && npm run install-all && cd ..",
+    "netlify-init": "netlify init",
+    "deploy-netlify": "netlify build && netlify deploy --prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "serverless-http": "^3.2.0"
+  }
+}

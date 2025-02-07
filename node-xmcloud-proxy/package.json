@@ -8,6 +8,8 @@
   },
   "scripts": {
     "start": "ts-node ./src/index.ts"
+	"build-all": "cd ../angular && npm run build && cd ../node-xmcloud-proxy && npx tsc",
+    "install-all": "cd ../angular && npm i && cd ../node-xmcloud-proxy"
   },
   "dependencies": {
     "@sitecore-jss/sitecore-jss-proxy": "~22.6.0-canary",
